@@ -2,7 +2,7 @@
 
 Public working-paper and replication repository for the short article *"Democracy and Nationalism, Reconsidered."*
 
-The paper disaggregates "democracy" and "nationalism" and asks when commitment to democracy is actually antagonistic to nationalism. Using the 2023 ISSP National Identity module (29 countries) and V-Dem v15, it shows that endorsement of liberal-democratic *rights* restrains *exclusionary* nationalism but leaves national pride alone, and — the central claim — that this restraint is conditioned by the civic-versus-ethnic **content of nationhood**, not by the liberal quality of institutions. The relationship is strong where the nation is imagined in largely civic terms and disappears in East Asian democracies that are institutionally liberal yet ethnically defined.
+The paper disaggregates "democracy" and "nationalism" and asks when commitment to democracy is actually antagonistic to nationalism. Using the 2023 ISSP National Identity module (29 countries) and V-Dem v15, it shows that endorsement of liberal-democratic *rights* restrains *exclusionary* nationalism but leaves national pride alone, and — the central claim — that this restraint is conditioned by the civic-versus-ethnic _content of nationhood_, not by the liberal quality of institutions. The relationship is strong where the nation is imagined in largely civic terms and disappears in democracies that are institutionally liberal yet ethnically defined.
 
 **Manuscript status:** Working paper under review.
 
