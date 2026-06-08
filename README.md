@@ -26,8 +26,6 @@ democracy_nationalism_reconsidered/
 │   ├── figures/                           # generated PNGs
 │   ├── docs/crosswalk.md, codebook.md     # figure/table -> script map; variable defs
 │   └── data/README.md                     # data-access instructions (not redistributed)
-├── literature_evidence_map.md             # literature / evidence map
-└── substack_post_democracy_nationalism.md # public-facing write-up
 ```
 
 ## Data
