@@ -1,0 +1,26 @@
+# LaTeX build artifacts (the manuscript lives in the overleaf/ submodule,
+# which has its own .gitignore; these catch any stray local builds elsewhere)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+!paper/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# Survey microdata — never commit (governed by GESIS / V-Dem terms)
+*.dta
+*.sav
+*.por
+
+# Scratch / review
+.review-tmp/
+
+# OS
+.DS_Store

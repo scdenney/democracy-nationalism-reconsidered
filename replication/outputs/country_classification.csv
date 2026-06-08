@@ -1,0 +1,30 @@
+country_code,country,region,region_regime,vdem_row_2023,regime_binary,grey_zone,n_respondents
+410,South Korea,East Asia,East Asian democracies,LD-,Democracy,True,1230
+158,Taiwan,East Asia,East Asian democracies,LD,Democracy,False,1563
+191,Croatia,Eastern Europe,Eastern Europe democracies,ED,Democracy,False,1400
+440,Lithuania,Eastern Europe,Eastern Europe democracies,ED+,Democracy,True,1257
+703,Slovakia,Eastern Europe,Eastern Europe democracies,ED,Democracy,False,1025
+705,Slovenia,Eastern Europe,Eastern Europe democracies,ED+,Democracy,True,1039
+348,Hungary,Eastern Europe,Eastern Europe non-democracies,EA,Non-democracy,False,1023
+643,Russia,Eastern Europe,Eastern Europe non-democracies,EA,Non-democracy,False,1574
+376,Israel,Other,Other democracies,ED+,Democracy,True,1197
+484,Mexico,Other,Other democracies,ED-,Democracy,True,1025
+710,South Africa,Other,Other democracies,ED,Democracy,False,3112
+356,India,South/Southeast Asia,South/Southeast Asia non-democracies,EA,Non-democracy,False,1605
+608,Philippines,South/Southeast Asia,South/Southeast Asia non-democracies,EA,Non-democracy,False,1800
+764,Thailand,South/Southeast Asia,South/Southeast Asia non-democracies,EA,Non-democracy,False,1500
+36,Australia,West,Western democracies,LD,Democracy,False,993
+40,Austria,West,Western democracies,ED+,Democracy,True,1146
+124,Canada,West,Western democracies,LD,Democracy,False,2127
+208,Denmark,West,Western democracies,LD,Democracy,False,1254
+246,Finland,West,Western democracies,LD,Democracy,False,1369
+250,France,West,Western democracies,LD,Democracy,False,1905
+276,Germany,West,Western democracies,LD,Democracy,False,1545
+300,Greece,West,Western democracies,ED+,Democracy,True,1463
+380,Italy,West,Western democracies,LD,Democracy,False,1135
+528,Netherlands,West,Western democracies,LD,Democracy,False,1509
+554,New Zealand,West,Western democracies,LD,Democracy,False,1191
+578,Norway,West,Western democracies,LD,Democracy,False,1132
+752,Sweden,West,Western democracies,LD,Democracy,False,1607
+756,Switzerland,West,Western democracies,LD,Democracy,False,3202
+840,United States,West,Western democracies,LD,Democracy,False,1589

@@ -1,0 +1,12 @@
+measure,label,items,n_nonmissing,mean_all_issp_weighted,alpha_unweighted_all_issp
+democracy_rights_all,"Democratic rights, all four ISSP items","dem_adequate_living, dem_minority_rights, dem_more_participation, dem_civil_disobedience",43192,0.7871524660428971,0.6649261743565678
+democracy_rights_liberal,"Democratic rights: minority, participation, civil disobedience","dem_minority_rights, dem_more_participation, dem_civil_disobedience",43072,0.7615726128971178,0.5797361294146445
+democracy_works_today,Perceived performance of democracy today,democracy_works_today,42209,0.5685455320410935,
+ascriptive_membership,Closed/ascriptive national membership,"born_important, religion_important, ancestry_important, born_not_effort",43397,0.4762671244324845,0.7675105404252385
+civic_membership,Civic national membership,"citizenship_important, respect_institutions_important, feel_national_important",43326,0.8018655630136005,0.5964010816398849
+national_superiority,National superiority and unconditional support,"world_better_if_like_us, country_better_than_most, support_country_wrong",43200,0.5510858259448363,0.626790687358814
+nation_state_self_determination,Every nation should have its own state,nation_state_self_determination,40972,0.6432823853932036,
+protective_sovereignty,Protectionist/sovereigntist nationalism,"limit_imports, oppose_international_enforcement, own_interests_even_conflict, no_foreign_land, national_tv_preference, intl_companies_damage",43309,0.5420279944315749,0.57596121769948
+anti_immigrant_exclusion,Anti-immigrant exclusion,"immigrants_increase_crime, immigrants_bad_economy, immigrants_take_jobs, immigrants_not_improve_society, native_born_preference, reduce_immigration",43337,0.5183948201221646,0.8049002713247039
+national_pride_non_democracy,"National pride, excluding pride in democracy","proud_political_influence, proud_economy, proud_sports, proud_arts, proud_history",43081,0.6402946879545088,0.7039208624451393
+pride_democracy,Pride in the way democracy works,pride_democracy,41908,0.5854768106144221,

@@ -1,0 +1,10 @@
+group,group_label,countries,respondents,democracy_countries,non_democracy_countries
+all_issp,All ISSP countries,29,43517,24,5
+democracies,All democracies,24,36015,24,0
+non_democracies,All non-democracies,5,7502,0,5
+western_democracies,Western democracies,15,23167,15,0
+east_europe_democracies,Eastern Europe democracies,4,4721,4,0
+east_europe_non_democracies,Eastern Europe non-democracies,2,2597,0,2
+east_asia_democracies,East Asian democracies,2,2793,2,0
+south_se_asia_non_democracies,South/Southeast Asia non-democracies,3,4905,0,3
+other_democracies,Other democracies,3,5334,3,0

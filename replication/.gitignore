@@ -1,0 +1,21 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+*~
+
+# R / Python
+.Rhistory
+.RData
+__pycache__/
+*.pyc
+.venv/
+
+# Restricted microdata must never be committed
+*.dta
+*.sav
+*.por
+# Individual-level ISSP-derived analysis file (regenerate with build_analysis_data.py)
+outputs/analysis_individual.csv
+
+# Local logs
+*.log

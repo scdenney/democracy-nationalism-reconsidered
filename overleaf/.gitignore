@@ -1,0 +1,25 @@
+# LaTeX build artifacts (kept local; Overleaf compiles its own)
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+
+# Build output directory (Makefile -outdir) and any stray PDFs
+out/
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+*~
+*.swp
+*.swo
