@@ -13,6 +13,12 @@ democracy_nationalism_reconsidered/
 ├── README.md                              # this file
 ├── paper/
 │   └── democracy-nationalism-reconsidered-with-si.pdf
+├── overleaf/                              # manuscript LaTeX source
+│   ├── main.tex, note_body.tex            # main text
+│   ├── si.tex, si_body.tex                # supplementary information
+│   ├── preamble.tex, references.bib       # shared preamble + bibliography
+│   ├── figures/                           # manuscript figures (PNG)
+│   └── Makefile                           # `make all` -> out/main.pdf, out/si.pdf
 ├── replication/                           # self-contained replication package
 │   ├── master.sh                          # one-command pipeline (9 steps)
 │   ├── code/                              # Python + R analysis scripts
@@ -39,9 +45,12 @@ export ISSP_DIR="/Users/scdenney/Documents/github/research/sandbox/national_iden
 
 See `replication/data/README.md` for the expected per-wave layout.
 
-## Reproduce
+## Build
 
 ```bash
+# manuscript
+cd overleaf && make all                 # -> out/main.pdf (15 pp), out/si.pdf (23 pp)
+
 # reproduce every CSV and figure (needs ISSP_DIR set; see above)
 cd replication && bash master.sh
 ```

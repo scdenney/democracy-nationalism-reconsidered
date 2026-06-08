@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\input{preamble}
+
+% TRACK: JOP *Short Article* — limit 14 pp inclusive of text, footnotes, references,
+% and tables/figures; double-spaced, 12pt, 1in margins; double-blind.
+% NOTE: this could be promoted to a JOP *Research Article* (limit 35 pp, same inclusive
+% basis) later if we want the extra room — at that point the trimmed material can return.
+%
+% Short title (<=50 chars) for the running head / title page: Democracy and Nationalism, Reconsidered
+\title{\bfseries Democracy and Nationalism, Reconsidered}
+\author{Steven Denney\thanks{Assistant Professor, Leiden University (s.c.denney@hum.leidenuniv.nl)}}
+\date{}
+
+\begin{document}
+
+{\singlespacing
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+\noindent Are democratic commitment and nationalism inherently at odds? Much conventional wisdom, and a substantial body of empirical research, suggests they are. Drawing on the 2023 ISSP National Identity module across 29 countries, I show the relationship is more conditional than commonly assumed, because both democracy and nationalism are treated as monolithic when each bundles distinct attitudes. Disaggregating reveals that national pride is largely unrelated to liberal-democratic principles, while satisfaction with democratic performance is positively associated with pride and even with national superiority. Democratic commitment opposes only the exclusionary face of nationalism, above all hostility toward immigrants, and even that opposition depends on how national membership is defined. The restraint holds where nationhood is imagined in civic terms and weakens or reverses where membership is ethnic, including in democracies that are institutionally liberal yet ethnically defined. The content of nationhood, not the liberal quality of institutions, decides when the two conflict.
+\end{abstract}
+
+\medskip
+\noindent\textit{Keywords:} nationalism; democratic values; national identity; measurement invariance; ISSP
+}
+
+\newpage
+\setcounter{page}{1}      % page numbering starts at the introduction (title page is unnumbered, not counted)
+\input{note_body.tex}
+
+\bigskip
+{\singlespacing
+\subsubsection*{Data availability}
+\noindent The ISSP 2023 National Identity module (ZA10010) and the earlier ISSP rounds used in the longitudinal appendix are publicly available from the GESIS Data Archive, and V-Dem v15 is accessed through the \texttt{vdemdata} R package. Replication code is available in the public repository accompanying this working paper (SI-M).
+
+\subsubsection*{Artificial intelligence}
+\noindent Anthropic's Claude Opus (4.7 and 4.8), an agentic AI system, was used for adversarial pre-submission review, coding and replication checks, and the formatting of tables and figures. The author stands by the prose as their own and the ideas as uniquely theirs.
+\par}
+
+\bibliography{references}
+
+\end{document}
