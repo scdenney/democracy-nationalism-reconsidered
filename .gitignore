@@ -22,5 +22,9 @@ __pycache__/
 # Scratch / review
 .review-tmp/
 
+# Draft notes excluded from the public-facing repository
+literature_evidence_map.md
+substack_post_democracy_nationalism.md
+
 # OS
 .DS_Store
