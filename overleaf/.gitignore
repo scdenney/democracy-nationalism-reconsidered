@@ -14,9 +14,13 @@
 *.lof
 *.lot
 
-# Build output directory (Makefile -outdir) and any stray PDFs
+# Build output directories (Makefile -outdir) and any stray PDFs
 out/
+out-anon/
 *.pdf
+
+# Anonymization sentinel (created/removed by `make anon`)
+.anon
 
 # OS / editor cruft
 .DS_Store

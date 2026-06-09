@@ -2,6 +2,13 @@
 % Engine: pdflatex. EB Garamond text, 12pt, 1in margins. Double-spaced per JOP
 % (text, footnotes, and references) and matching the ROC house style; the JOP
 % short-article limit is 14 pages inclusive of text, notes, references, and floats.
+% --- Anonymization switch (single source for the anonymous JOP build vs the
+% de-anonymized working paper / SSRN / public GitHub). Default is de-anonymized.
+% `make anon` drops a `.anon` sentinel so \anontrue fires and the five identifying
+% elements (author x2, self-citation, replication URL x2) are masked. See the Makefile.
+\newif\ifanon
+\IfFileExists{.anon}{\anontrue}{\anonfalse}
+
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
