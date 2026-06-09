@@ -2,7 +2,7 @@
 
 Public working-paper and replication repository for the short article *"Democracy and Nationalism, Reconsidered."*
 
-The paper disaggregates "democracy" and "nationalism" and asks when commitment to democracy is actually antagonistic to nationalism. Using the 2023 ISSP National Identity module (29 countries) and V-Dem v15, it shows that endorsement of liberal-democratic *rights* restrains *exclusionary* nationalism but leaves national pride alone, and — the central claim — that this restraint is conditioned by the civic-versus-ethnic _content of nationhood_, not by the liberal quality of institutions. The relationship is strong where the nation is imagined in largely civic terms and disappears in democracies that are institutionally liberal yet ethnically defined.
+The paper disaggregates "democracy" and "nationalism" and asks when commitment to democracy is actually antagonistic to nationalism. Using the 2023 ISSP National Identity module (29 countries) and V-Dem v15, it shows that endorsement of liberal-democratic *rights* restrains *exclusionary* nationalism but leaves national pride alone, and — the central claim — that this restraint is conditioned by the civic-versus-ethnic **content of nationhood**, not by the liberal quality of institutions. The relationship is strong where the nation is imagined in largely civic terms and disappears in East Asian democracies that are institutionally liberal yet ethnically defined.
 
 **Manuscript status:** Working paper under review.
 
@@ -11,7 +11,9 @@ The paper disaggregates "democracy" and "nationalism" and asks when commitment t
 ```
 democracy_nationalism_reconsidered/
 ├── README.md                              # this file
-├── paper/
+├── paper/                                 # compiled public-facing PDFs
+│   ├── democracy-nationalism-reconsidered.pdf
+│   ├── democracy-nationalism-reconsidered-si.pdf
 │   └── democracy-nationalism-reconsidered-with-si.pdf
 ├── overleaf/                              # manuscript LaTeX source
 │   ├── main.tex, note_body.tex            # main text
@@ -19,13 +21,13 @@ democracy_nationalism_reconsidered/
 │   ├── preamble.tex, references.bib       # shared preamble + bibliography
 │   ├── figures/                           # manuscript figures (PNG)
 │   └── Makefile                           # `make all` -> out/main.pdf, out/si.pdf
-├── replication/                           # self-contained replication package
-│   ├── master.sh                          # one-command pipeline (9 steps)
-│   ├── code/                              # Python + R analysis scripts
-│   ├── outputs/                           # generated CSVs
-│   ├── figures/                           # generated PNGs
-│   ├── docs/crosswalk.md, codebook.md     # figure/table -> script map; variable defs
-│   └── data/README.md                     # data-access instructions (not redistributed)
+└── replication/                           # self-contained replication package
+    ├── master.sh                          # one-command pipeline (9 steps)
+    ├── code/                              # Python + R analysis scripts
+    ├── outputs/                           # generated CSVs
+    ├── figures/                           # generated PNGs
+    ├── docs/crosswalk.md, codebook.md     # figure/table -> script map; variable defs
+    └── data/README.md                     # data-access instructions (not redistributed)
 ```
 
 ## Data

@@ -17,6 +17,22 @@
 \begin{document}
 \maketitle
 \thispagestyle{empty}
+
+% Table of contents (sections only). Airy, evenly spaced entries; the font is
+% reduced as needed so all SI sections fit on the title page.
+\vspace*{-1.3cm}
+{\setcounter{tocdepth}{1}
+\renewcommand{\contentsname}{Contents}
+\footnotesize
+\setstretch{1.9}
+% Even line-based spacing: drop the chunky inter-section skip so the gaps are uniform.
+\makeatletter
+\patchcmd{\l@section}{\addvspace{1.0em \@plus\p@}}{\addvspace{\z@}}{}{}
+\makeatother
+\tableofcontents
+\par}
+\medskip
+
 \doublespacing
 
 \input{si_body.tex}

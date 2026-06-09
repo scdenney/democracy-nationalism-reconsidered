@@ -20,6 +20,7 @@
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{rotating}      % sidewaystable for wide SI tables
+\usepackage{needspace}     % keep SI tables from starting too low and splitting across a page
 \usepackage[round]{natbib}
 \bibliographystyle{apsr}   % JOP-appropriate author-date (APSR style)
 \setlength{\bibsep}{2pt plus 0.5pt minus 0.5pt}   % tighten the reference list
@@ -55,6 +56,14 @@
 \setlength{\emergencystretch}{3em}
 \setlength{\skip\footins}{20pt plus 4pt minus 2pt}  % space between the text block and footnotes
 \setlength{\footnotesep}{10pt}                       % space between successive footnotes
+% Double-space footnote text too (setspace leaves footnotes single-spaced) — JOP requirement.
+% Reproduces article.cls \@makefntext exactly, adding \doublespacing before the note body.
+\makeatletter
+\renewcommand\@makefntext[1]{%
+  \parindent 1em%
+  \noindent
+  \hb@xt@1.8em{\hss\@makefnmark}\doublespacing#1}
+\makeatother
 
 % pandoc image-bounding macro (scales a figure to fit the text block; pandoc defines
 % this only in standalone mode, so we provide it for the converted bodies).

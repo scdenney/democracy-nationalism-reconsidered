@@ -1,9 +1,11 @@
-This supplement documents data, measures, measurement-comparability tests, the full multilevel results, robustness checks, and a descriptive longitudinal panel. Section numbers are referenced from the main text. All analyses use ISSP 2023 (ZA10010 v1.0.0); country-level moderators use V-Dem v15 (2023 values).
+{\singlespacing\noindent This supplement documents data, measures, measurement-comparability tests, the full multilevel results, robustness checks, and a descriptive longitudinal panel. Section numbers are referenced from the main text. All analyses use ISSP 2023 (ZA10010 v1.0.0); country-level moderators use V-Dem v15 (2023 values).\par}
 
+\clearpage
 \section{SI-A. Measures and coding}\label{si-a.-measures-and-coding}
 
 All items are rescaled to \([0,1]\) and oriented so higher = more of the named concept. ISSP \texttt{WEIGHT\_COM} (combined weight) is used for the descriptive and reliability estimates, normalized for pooled estimates so each country contributes equally; the multilevel models in the main text are unweighted, with design-weighted versions reported as a robustness check (SI-J). Item codings were verified against the ZA10010 value labels.
 
+\needspace{340pt}%
 {\small\begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -40,7 +42,8 @@ The four-item democratic-rights index (adding v41, ``adequate standard of living
 
 29 countries, \(N = 43{,}517\). Countries are ordered by the civic--ethnic content of nationhood (country-mean ascriptive membership), the main moderator. Note that East Asian democracies (Taiwan, South Korea) score high on V-Dem's liberal component yet have markedly more ascriptive conceptions of nationhood than the Western core.
 
-{\small\begin{longtable}[]{@{}
+\needspace{400pt}%
+{\footnotesize\begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1400}}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1750}}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1500}}
@@ -107,6 +110,7 @@ The simple regime binary used for robustness (SI-J) codes V-Dem liberal and elec
 
 Cronbach's \(\alpha\) (unweighted). The democratic-rights index is modest in the West (\(\alpha = 0.50\)) and stronger elsewhere; the anti-immigrant index is strong in Western and East European democracies but weak in South/Southeast Asia, foreshadowing the non-invariance documented in SI-D.
 
+\needspace{170pt}%
 {\small\begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -146,6 +150,7 @@ Other democracies & 0.67 & 0.56 & 0.61 & 0.67 & 0.74 \\
 
 The analysis compares \emph{associations} across contexts, not scale means, and the invariance tests justify exactly that restriction. A multi-group confirmatory factor analysis across the six region-regime groups (ML, with FIML for missingness) tests configural, metric, and scalar invariance, using the decision rule \(\Delta\text{CFI} \geq -0.010\) \citep{cheung2002goodness}.
 
+\needspace{250pt}%
 {\small\begin{longtable}[]{@{}llrrrr@{}}
 \toprule\noalign{}
 Scale & Level & CFI & RMSEA & SRMR & \(\Delta\)CFI \\
@@ -179,6 +184,7 @@ By design, all inferences rest on within-context associations and slopes, and no
 
 Individuals (\(i\)) nested in countries (\(j\)). The predictor (democratic-rights endorsement) is group-mean-centered so the slope is the within-country relationship; its country mean enters at level 2 (grand-mean-centered). Level-2 moderators are standardized across the 29 countries: \texttt{z\_content} is the country-mean of ascriptive membership (higher = more ethnic conception of nationhood), \texttt{z\_liberal} is the standardized V-Dem liberal component. Models are estimated by ML; \(p\)-values use the normal approximation (justified by the large \(N\)). Outcomes are on the 0--1 scale.
 
+\needspace{140pt}%
 {\small\begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1739}}
@@ -213,6 +219,7 @@ National pride & 0.046 & 0.098 & 0.20 & 0.184 & 0.06 \\
 
 The random-slope SD (0.10--0.14) is as large as or larger than the average slope, confirming substantial cross-national heterogeneity in the democratic-rights relationship. The focal cross-level interactions in SI-E are pre-specified. I report significance markers only as a guide and rest interpretation on effect size, and I apply no multiple-comparisons correction to the secondary outcomes.
 
+\needspace{140pt}%
 {\small\begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2000}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2667}}
@@ -243,6 +250,7 @@ SEs in parentheses. \texttt{***\ p\textless{}.001,\ **\ p\textless{}.01,\ *\ p\t
 
 The implied within-country slopes by content of nationhood (model M2) follow, where ``civic'' is one SD below mean ascriptive content and ``ethnic'' is one SD above.
 
+\needspace{140pt}%
 {\small\begin{longtable}[]{@{}lrrr@{}}
 \toprule\noalign{}
 Outcome & Civic context (−1 SD) & Mean & Ethnic context (+1 SD) \\
@@ -257,6 +265,7 @@ National superiority & −0.102 & −0.048 & +0.005 \\
 National pride & +0.021 & +0.053 & +0.085 \\
 \end{longtable}}
 
+\clearpage
 \section{SI-F. Country-level second stage (slopes regressed on moderators)}\label{si-f.-country-level-second-stage-slopes-regressed-on-moderators}
 
 A two-step check corroborates the multilevel interaction. Country-specific within-country correlations (the raw counterpart to the controls-adjusted slopes plotted in the main text's Figure 2) are regressed on the standardized moderators across the 29 countries. The moderator is oriented as in the main text, so the ethnic content of nationhood (country-mean ascriptive membership) carries a positive sign.
@@ -270,6 +279,7 @@ A head-to-head OLS with standardized predictors compares the two moderators dire
 
 Replacing the predictor with perceived democratic performance (group-mean-centered) gives the contrast in the main text (its Figure 3). Pooled within-country slopes (M1-equivalent):
 
+\needspace{130pt}%
 {\small\begin{longtable}[]{@{}lr@{}}
 \toprule\noalign{}
 Outcome & Performance slope \\
@@ -292,12 +302,14 @@ Performance evaluations travel positively with pride, superiority, and civic mem
 
 The within-country weighted correlations behind the main-text ``map.'' These are descriptive and weaker than the models, but show the same contrast.
 
+\needspace{310pt}%
 \begin{figure}[H]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio,alt={Democratic-rights endorsement and nationalism, by region-regime group (within-country weighted correlations).}]{figures/regional_democratic_rights_heatmap.png}}
 \figcap{Democratic-rights endorsement and nationalism, by region-regime group}{Cell entries are within-country weighted correlations (ISSP combined weight, equal country weighting), averaged within each region-regime group. Within Western democracies the rights--exclusion correlations are negative; outside the West they weaken and, in the electoral autocracies, turn positive.}
 \end{figure}
 
+\needspace{270pt}%
 \begin{figure}[H]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio,alt={Perceived democratic performance and nationalism, by region-regime group.}]{figures/regional_democracy_performance_heatmap.png}}
@@ -307,12 +319,14 @@ The within-country weighted correlations behind the main-text ``map.'' These are
 \clearpage
 \section{SI-I. Country-specific adjusted slopes (all outcomes)}\label{si-i.-country-specific-adjusted-slopes-all-outcomes}
 
+\needspace{370pt}%
 \begin{figure}[H]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio,alt={Country-specific adjusted slopes for democratic-rights endorsement (with controls), by outcome.}]{figures/country_adjusted_democratic_rights_slopes.png}}
 \figcap{Country-specific adjusted slopes for democratic-rights endorsement, by outcome}{Points are country-specific within-country slopes of each outcome on democratic-rights endorsement, adjusted for individual controls (age, gender, education, left--right placement); bars are 95\% confidence intervals and color denotes region-regime group. Countries share the anti-immigrant ordering of main-text Figure 1. The anti-immigrant panel reproduces that figure; the ascriptive and pride panels extend it to the other outcomes.}
 \end{figure}
 
+\clearpage
 \section{SI-J. Robustness}\label{si-j.-robustness}
 
 The reversal at the heart of the paper is not an artifact of the regime classification, the choice of index, or the weighting scheme, as five checks confirm.
@@ -332,12 +346,14 @@ The clustering unit does not matter. Germany and Israel each contribute two ISSP
 
 The democratic-rights battery is 2023-only, so the relationship cannot be traced over time. As context, I track the \emph{levels} of two exclusionary-nationalism measures available in all four ISSP National Identity rounds --- ascriptive membership (born + religion importance) and anti-immigrant exclusion (crime, economy, jobs, immigration level) --- for Western versus non-Western countries. This is descriptive and leans on cross-wave comparability, which the invariance results (SI-D) show is imperfect. Country composition also varies by wave, since the 1995 round fields only four Western countries. Read trajectories, not precise levels. The finer region-regime classification used throughout the rest of the analysis is too sparse to follow across waves here, so this panel falls back on a deliberately coarse West / non-West contrast. That split is a convenience of the thin longitudinal data, not a claim that either group is internally uniform or that the two mark a normative or civilizational divide. It is a dispassionate grouping of places by region and regime, and where the better-resolved groups differ in the 2023 cross-section I report those differences directly (SI-B, SI-H).
 
+\needspace{240pt}%
 \begin{figure}[H]
 \centering
 \pandocbounded{\includegraphics[keepaspectratio,alt={ISSP National Identity 1995--2023. Exclusionary nationalism, West versus non-West (weighted means; composition varies by wave). Panel (A) is the ascriptive (ethnic) conception of nationhood and panel (B) is anti-immigrant exclusion.}]{figures/figS_longitudinal.png}}
 \figcap{Exclusionary nationalism, West versus non-West, ISSP National Identity 1995--2023}{Weighted means by wave; panel (A) is the ascriptive (ethnic) conception of nationhood and panel (B) is anti-immigrant exclusion. Country composition varies by wave (1995 includes only four Western countries), and cross-wave comparability is imperfect (SI-D), so read trajectories rather than precise levels. The figure shows a long Western civic turn against flat non-Western levels.}
 \end{figure}
 
+\needspace{120pt}%
 {\small\begin{longtable}[]{@{}llrrrr@{}}
 \toprule\noalign{}
 Measure & Group & 1995 & 2003 & 2013 & 2023 \\
@@ -359,6 +375,7 @@ The descriptive picture is a long Western civic turn: ascriptive and anti-immigr
 
 Taiwan and South Korea redefined their national projects and democratized recently, Taiwan across the 1990s (with the first direct presidential election in 1996) and South Korea in 1987--1988. Redefining the nation, and the political-cultural change that democratization sets in motion, takes a generation to consolidate rather than all at once. Political identities and orientations crystallize during the formative, ``impressionable'' years and then persist with comparative stability across the life course \citep{mannheim1952generations, jennings1981generations, krosnick1989aging, neundorf2017socialization}, so a cohort that comes of age under one national-institutional settlement tends to carry its imprint forward. I bracket that formative window as ages 12--25, running from the onset of political awareness through early adulthood, and ask whether citizens whose entire window fell under democratic institutions hold more civic, less ascriptive conceptions of nationhood. A respondent is classified as democratically socialized if they reached age 12 at or after the transition, so that the whole 12--25 window post-dates it (born in or after 1984 in Taiwan, 1975 in South Korea). Cell entries are weighted means. Ascriptive membership and anti-immigrant exclusion run from 0 to 1 with higher values more exclusionary, and the civic-minus-ethnic column is the civic-membership advantage over ascriptive membership, where higher is more civic.
 
+\needspace{150pt}%
 \begin{table}[H]
 \centering
 \small
@@ -379,6 +396,7 @@ The pattern matches the expectation. In Taiwan the democratically socialized coh
 
 The reorientation shows up not only in the level of ascriptive nationhood but in the democratic-rights relationship itself. The table below reports the within-cohort correlation of democratic-rights endorsement with anti-immigrant exclusion and with ascriptive membership.
 
+\needspace{150pt}%
 \begin{table}[H]
 \centering
 \small

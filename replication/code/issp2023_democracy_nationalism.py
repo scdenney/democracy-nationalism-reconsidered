@@ -1090,6 +1090,14 @@ def plot_core_summary(pooled: pd.DataFrame) -> None:
     plt.close(fig)
 
 
+def _cell_text_color(im, val: float) -> str:
+    """White text on dark heatmap cells, black on light ones, using the image's
+    own colormap and normalization so the contrast tracks the rendered color."""
+    r, g, b, _ = im.cmap(im.norm(val))
+    luminance = 0.299 * r + 0.587 * g + 0.114 * b
+    return "white" if luminance < 0.5 else "black"
+
+
 def plot_region_heatmap(
     pooled: pd.DataFrame,
     predictor: str,
@@ -1120,7 +1128,10 @@ def plot_region_heatmap(
             val = pivot.iloc[i, j]
             p = pvals.iloc[i, j]
             if pd.notna(val):
-                ax.text(j, i, fmt_r(val, p), ha="center", va="center", fontsize=8)
+                ax.text(
+                    j, i, fmt_r(val, p), ha="center", va="center", fontsize=8,
+                    color=_cell_text_color(im, val),
+                )
     cbar = fig.colorbar(im, ax=ax, fraction=0.032, pad=0.02)
     cbar.set_label("Within-country weighted correlation")
     fig.text(
@@ -1162,7 +1173,10 @@ def plot_country_heatmap(country_corrs: pd.DataFrame) -> None:
             val = pivot.iloc[i, j]
             p = pvals.iloc[i, j]
             if pd.notna(val):
-                ax.text(j, i, fmt_r(val, p), ha="center", va="center", fontsize=6.5)
+                ax.text(
+                    j, i, fmt_r(val, p), ha="center", va="center", fontsize=6.5,
+                    color=_cell_text_color(im, val),
+                )
     cbar = fig.colorbar(im, ax=ax, fraction=0.028, pad=0.02)
     cbar.set_label("Correlation")
     fig.tight_layout()
@@ -1289,7 +1303,10 @@ def plot_adjusted_region_changes(region_models: pd.DataFrame) -> None:
                 val = pivot.iloc[i, j]
                 p = pvals.iloc[i, j]
                 if pd.notna(val):
-                    ax.text(j, i, fmt_r(val, p), ha="center", va="center", fontsize=8)
+                    ax.text(
+                        j, i, fmt_r(val, p), ha="center", va="center", fontsize=8,
+                        color=_cell_text_color(im, val),
+                    )
         cbar = fig.colorbar(im, ax=ax, fraction=0.032, pad=0.02)
         cbar.set_label("Predicted change on 0-1 outcome scale")
         fig.text(
